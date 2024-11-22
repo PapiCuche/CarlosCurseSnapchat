@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF991D122CEEA1C90016CA00 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AF991D112CEEA1C90016CA00 /* FirebaseAuth */; };
+		AFA169972CEB67F3000E2A38 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AFA169962CEB67F3000E2A38 /* FirebaseAnalytics */; };
+		AFA169992CEB67F3000E2A38 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = AFA169982CEB67F3000E2A38 /* FirebaseAnalyticsOnDeviceConversion */; };
+		AFA1699B2CEB67F3000E2A38 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = AFA1699A2CEB67F3000E2A38 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		AFA1699D2CEB67F3000E2A38 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = AFA1699C2CEB67F3000E2A38 /* FirebaseAppCheck */; };
+		AFA1699F2CEB67F3000E2A38 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AFA1699E2CEB67F3000E2A38 /* FirebaseAppDistribution-Beta */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AFA169762CEB64B2000E2A38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA1699D2CEB67F3000E2A38 /* FirebaseAppCheck in Frameworks */,
+				AF991D122CEEA1C90016CA00 /* FirebaseAuth in Frameworks */,
+				AFA169972CEB67F3000E2A38 /* FirebaseAnalytics in Frameworks */,
+				AFA1699F2CEB67F3000E2A38 /* FirebaseAppDistribution-Beta in Frameworks */,
+				AFA1699B2CEB67F3000E2A38 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				AFA169992CEB67F3000E2A38 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +106,7 @@
 				AFA169612CEB64B0000E2A38 /* CarlosCurseSnapchat */,
 				AFA169782CEB64B2000E2A38 /* CarlosCurseSnapchatTests */,
 				AFA169822CEB64B2000E2A38 /* CarlosCurseSnapchatUITests */,
+				AFA169B82CEB72EF000E2A38 /* Frameworks */,
 				AFA169602CEB64B0000E2A38 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +119,13 @@
 				AFA1697F2CEB64B2000E2A38 /* CarlosCurseSnapchatUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AFA169B82CEB72EF000E2A38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +148,12 @@
 			);
 			name = CarlosCurseSnapchat;
 			packageProductDependencies = (
+				AFA169962CEB67F3000E2A38 /* FirebaseAnalytics */,
+				AFA169982CEB67F3000E2A38 /* FirebaseAnalyticsOnDeviceConversion */,
+				AFA1699A2CEB67F3000E2A38 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				AFA1699C2CEB67F3000E2A38 /* FirebaseAppCheck */,
+				AFA1699E2CEB67F3000E2A38 /* FirebaseAppDistribution-Beta */,
+				AF991D112CEEA1C90016CA00 /* FirebaseAuth */,
 			);
 			productName = CarlosCurseSnapchat;
 			productReference = AFA1695F2CEB64B0000E2A38 /* CarlosCurseSnapchat.app */;
@@ -208,6 +237,9 @@
 			);
 			mainGroup = AFA169562CEB64B0000E2A38;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AFA169952CEB67F3000E2A38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AFA169602CEB64B0000E2A38 /* Products */;
 			projectDirPath = "";
@@ -569,6 +601,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFA169952CEB67F3000E2A38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF991D112CEEA1C90016CA00 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA169952CEB67F3000E2A38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AFA169962CEB67F3000E2A38 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA169952CEB67F3000E2A38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		AFA169982CEB67F3000E2A38 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA169952CEB67F3000E2A38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		AFA1699A2CEB67F3000E2A38 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA169952CEB67F3000E2A38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		AFA1699C2CEB67F3000E2A38 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA169952CEB67F3000E2A38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		AFA1699E2CEB67F3000E2A38 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA169952CEB67F3000E2A38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFA169572CEB64B0000E2A38 /* Project object */;
 }
